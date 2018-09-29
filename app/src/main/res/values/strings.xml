@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HF9_Bits_and_Pizzas</string>
+    <string name="action_create_order">Create Order</string>
 </resources>
