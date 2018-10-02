@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class MainActivity extends Activity {
 
@@ -24,7 +25,9 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected (MenuItem item) {
         switch (item.getItemId()) {                                //Проверить какой элемент
             case R.id.action_create_order:                         //был выбран пользователем
-            //Код, выполняемый при выборе элемента Create Order
+                //Код, выполняемый при выборе элемента Create Order
+                Intent intent = new Intent(this, OrderActivity.class);
+                startActivity(intent);
                 return true;                                       //Возвращаемое true сообщает о том, что щелчок на элементе отработан
             case R.id.actions_settings:
                 //Код, выполняемый при выборе элемента Settings
